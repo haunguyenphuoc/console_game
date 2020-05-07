@@ -28,45 +28,53 @@ class MoveButton extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          GestureDetector(
-            onTap: () {
-              debugPrint('TOP');
-            },
-            child: Icon(
-              Icons.arrow_drop_up,
-              size: 36.0,
+          Flexible(
+            child: GestureDetector(
+              onTap: () {
+                debugPrint('TOP');
+              },
+              child: Icon(
+                Icons.arrow_drop_up,
+                size: 36.0,
+              ),
             ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              GestureDetector(
-                onTap: () {
-                  debugPrint('LEFT');
-                },
-                child: Icon(
-                  Icons.arrow_left,
-                  size: 36.0,
+              Flexible(
+                child: GestureDetector(
+                  onTap: () {
+                    debugPrint('LEFT');
+                  },
+                  child: Icon(
+                    Icons.arrow_left,
+                    size: 36.0,
+                  ),
                 ),
               ),
-              GestureDetector(
-                onTap: () {
-                  debugPrint('RIGHT');
-                },
-                child: Icon(
-                  Icons.arrow_right,
-                  size: 36.0,
+              Flexible(
+                child: GestureDetector(
+                  onTap: () {
+                    debugPrint('RIGHT');
+                  },
+                  child: Icon(
+                    Icons.arrow_right,
+                    size: 36.0,
+                  ),
                 ),
               ),
             ],
           ),
-          GestureDetector(
-            onTap: () {
-              debugPrint('DOWN');
-            },
-            child: Icon(
-              Icons.arrow_drop_down,
-              size: 36.0,
+          Flexible(
+            child: GestureDetector(
+              onTap: () {
+                debugPrint('DOWN');
+              },
+              child: Icon(
+                Icons.arrow_drop_down,
+                size: 36.0,
+              ),
             ),
           ),
         ],
